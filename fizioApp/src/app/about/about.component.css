@@ -1,0 +1,58 @@
+/* 
+.about-container-wrapper {
+} */
+
+.google-map{
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  padding: 20px; /* Optional: adds space around the component */
+  width: 80%;
+  padding-left: 10%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  padding: 20px; /* Optional: adds space around the component */
+  width: 80%;
+  padding-left: 10%;
+}
+
+.about-image img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 65px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack the image and text */
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%; /* Make the image take full width */
+  }
+
+  .about-text {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}

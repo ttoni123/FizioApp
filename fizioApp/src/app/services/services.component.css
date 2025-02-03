@@ -1,0 +1,89 @@
+.services-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.services-wrapper-container {
+  display: flex;
+  align-items: center; /* Vertically align buttons and services */
+  position: relative; /* To position buttons inside this container */
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center the service items */
+  gap: 10%;
+  overflow-x: auto;
+  padding-left: 10%;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.service-item {
+  flex: 0 0 auto;
+  width: 500px; /* Adjust width to make the service items bigger */
+  height: auto;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for effect */
+  transition: transform 0.3s ease;
+}
+
+
+.service-image {
+  width: 100%;
+  max-width: 350px; /* Adjust image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.service-text p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Styling for the scroll buttons */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.scroll-button.left {
+  left: 10px; /* Position the left button on the left */
+}
+
+.scroll-button.right {
+  right: 10px; /* Position the right button on the right */
+}
+
+@media (max-width: 768px) {
+  .services-wrapper {
+    gap: 10px;
+  }
+
+  .service-item {
+    width: 90%; /* Adjust width on smaller screens */
+    padding: 20px;
+  }
+
+  .scroll-button {
+    font-size: 20px; /* Slightly smaller button on mobile */
+  }
+}

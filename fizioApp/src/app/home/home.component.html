@@ -1,0 +1,48 @@
+<main class="main-content">
+    <app-hero></app-hero>
+    <div class="about-container-wrapper">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/aboutImage.jpg" alt="About Image" />
+        </div>
+        <div class="about-text">
+          <h2>Dobrodošli</h2>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis viverra faucibus nisl senectus velit habitasse maximus augue. Euismod porta ut vitae nibh litora, enim commodo orci. Dignissim sodales interdum inceptos amet phasellus leo aliquet habitant. Enim egestas aliquam ornare purus urna turpis maecenas. Suspendisse purus pretium auctor dis nam ligula himenaeos rhoncus. Proin himenaeos erat condimentum felis; malesuada volutpat integer litora. Vehicula non risus vehicula platea; cras non nam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="article-container-wrapper">
+      <div class="article-container">      
+        <div class="article-text">
+          <h2>Neka usluga koju nudim</h2>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Venenatis viverra faucibus nisl senectus velit habitasse maximus augue. Euismod porta ut vitae nibh litora, enim commodo orci. Dignissim sodales interdum inceptos amet phasellus leo aliquet habitant. Enim egestas aliquam ornare purus urna turpis maecenas. Suspendisse purus pretium auctor dis nam ligula himenaeos rhoncus. Proin himenaeos erat condimentum felis; malesuada volutpat integer litora. Vehicula non risus vehicula platea; cras non nam.</p>
+        </div>
+        <div class="article-image">
+          <img src="assets/aboutImage.jpg" alt="article Image" />
+        </div>
+      </div>
+    </div>
+    <div class="services-container">
+      <h2>Članci</h2>
+    
+      <div class="services-wrapper-container">
+        <!-- Left Scroll Button -->
+        <button class="scroll-button left" (click)="scrollLeft(scrollContainer)">&#10094;</button>
+    
+        <!-- Services Wrapper -->
+        <div class="services-wrapper" #scrollContainer>
+          <div class="service-item" *ngFor="let service of services">
+            <img [src]="service.image" alt="Service Image" class="service-image" />
+            <div class="service-text">
+              <h3>{{ service.title }}</h3>
+              <p>{{ service.description }}</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Right Scroll Button -->
+        <button class="scroll-button right" (click)="scrollRight(scrollContainer)">&#10095;</button>
+      </div>
+    </div>
+    
+  </main>

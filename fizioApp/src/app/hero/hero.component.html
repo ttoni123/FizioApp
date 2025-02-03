@@ -1,0 +1,9 @@
+<section class="hero">
+    <div class="slider">
+      <div *ngFor="let image of images; let i = index" [class.active]="i === currentIndex" class="slide">
+        <img [src]="image.src" [alt]="image.alt" />
+      </div>
+      <button class="prev" (click)="prevSlide()">&#10094;</button>
+      <button class="next" (click)="nextSlide()">&#10095;</button>
+    </div>
+  </section>

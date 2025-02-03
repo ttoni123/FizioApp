@@ -1,0 +1,18 @@
+<!-- footer.component.html -->
+<footer class="footer">
+    <div class="container text-center">
+      <p>© 2025 My Angular App. All rights reserved.</p>
+  
+      <!-- Newsletter Subscription Section -->
+      <div class="newsletter">
+        <p>Subscribe to our newsletter</p>
+        <form (ngSubmit)="subscribeToNewsletter()">
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Enter your email"  name="email" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  

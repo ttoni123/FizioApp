@@ -1,0 +1,42 @@
+/* footer.component.css */
+.footer {
+    background-color: black !important;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .newsletter {
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .newsletter .input-group {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .newsletter .form-control {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .newsletter .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  

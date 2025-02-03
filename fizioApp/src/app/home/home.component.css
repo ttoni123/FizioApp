@@ -1,0 +1,214 @@
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  /* Center the component horizontally */
+.about-container-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  padding: 20px; /* Optional: adds space around the component */
+  width: 80%;
+  padding-left: 10%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.about-text {
+  flex: 1;
+  padding-left: 65px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack the image and text */
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%; /* Make the image take full width */
+  }
+
+  .about-text {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+/* Center the component horizontally */
+.article-container-wrapper {
+  /*background-image: url('./../../assets/coloredBackground.jpg');*/
+  background-color: #f6f6f8;
+  display: flex;
+  justify-content: center; /* Horizontally center the container */
+  padding: 20px; /* Optional: adds space around the component */
+  width: 100%;
+}
+
+.article-container {
+  display: flex;
+  align-items: center; /* Vertically align image and text */
+  justify-content: center;
+  padding: 20px;
+}
+
+.article-image img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.article-text {
+  flex: 1;
+  padding-left: 65px;
+}
+
+.article-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.article-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .article-container {
+    flex-direction: column; /* Stack the image and text */
+    text-align: center;
+  }
+
+  .article-image img {
+    width: 100%; /* Make the image take full width */
+  }
+
+  .article-text {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+.services-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.services-wrapper-container {
+  display: flex;
+  align-items: center; /* Vertically align buttons and services */
+  position: relative; /* To position buttons inside this container */
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center; /* Horizontally center the service items */
+  gap: 10%;
+  overflow-x: auto;
+  padding-left: 10%;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.service-item {
+  flex: 0 0 auto;
+  width: 500px; /* Adjust width to make the service items bigger */
+  height: auto;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for effect */
+  transition: transform 0.3s ease;
+}
+
+
+.service-image {
+  width: 100%;
+  max-width: 350px; /* Adjust image size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.service-text p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Styling for the scroll buttons */
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.scroll-button.left {
+  left: 10px; /* Position the left button on the left */
+}
+
+.scroll-button.right {
+  right: 10px; /* Position the right button on the right */
+}
+
+@media (max-width: 768px) {
+  .services-wrapper {
+    gap: 10px;
+  }
+
+  .service-item {
+    width: 90%; /* Adjust width on smaller screens */
+    padding: 20px;
+  }
+
+  .scroll-button {
+    font-size: 20px; /* Slightly smaller button on mobile */
+  }
+}
+
